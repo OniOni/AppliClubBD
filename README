@@ -1,0 +1,32 @@
+Archive du club BD
+
+les fichiers et repertoires suivants sont :
+
+clubBD:
+    Code specifique clubbd pour l'appli
+gui:
+    Code generique d'interface graphique utilisé pour l'appli
+tests:
+    Code de test.
+tools:
+    Outil pour les nouvelle année, inventaire, recuperation d'emails
+ui:
+    Fichier specifique pour la gui, logo du club, ...
+
+config.py:
+    configuration de l'appli
+
+db.db:
+    Base de donnée. LE truc à sauvegarder regulierement
+
+apps.py:
+    L'application. run with python apps.py
+
+
+DEPS
+
+pygtk
+    avec gtk > 2.18
+
+sqlalchemy
+    5.X.X

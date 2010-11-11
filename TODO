@@ -1,0 +1,42 @@
+TODO
+-------------
+
+- End of first semester not enforced
+- max nb not enforced
+
+REFACTORING Serial
+--------------------
+
+Cas des bouquins sans serial ?
+Cas des serial avec plusieurs prefixs associés
+
+AMHA il faut créer une serie pour chacun de ces bouquins, quitte a ce qu'ils
+n'aient qu'un unique element.
+
+
+# Le gros problème c'est ces prefix qui peuvent etre differents au sein d'une meme serie.
+
+Je propose donc :
+
+- Un bouquin est forcé d'avoir une serie
+- Une serie possede un prefix
+- Un bouquin possede un numero de serie, un numero de tome et un numero de copie.
+
+
+- On y gagneras :
+
+- Temps de chargement ameliôré
+- Insertion de nouveau bouquin plus simple
+- Code plus propre
+
+Code
+----
+
+- comflit dans filter.py... Pourquoi ?
+
+Optimisations
+-------------
+
+Actuellement les treeviews ont des colonnes de taille fixe. c'est
+reloux mais plus rapide. Le jour ou le club se voit doter d'un ordi
+plus puissant, on peut repasser en taille non fixe
